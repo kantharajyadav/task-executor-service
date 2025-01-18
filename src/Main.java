@@ -19,11 +19,9 @@ public class Main {
         TaskGroup writeGroup1 = new TaskGroup(UUID.randomUUID());
         TaskGroup writeGroup2 = new TaskGroup(UUID.randomUUID());
 
-        List<Future<?>> allFutures = new ArrayList<>();
-
         // Test Scenario 1: Multiple READ operations in same group
         System.out.println("Test 1: Sequential READ operations in same group");
-        allFutures.addAll(submitReadTasks(executor, readGroup1, 5));
+        List<Future<?>> allFutures = new ArrayList<>(submitReadTasks(executor, readGroup1, 5));
 
         // Test Scenario 2: Multiple WRITE operations in same group
         System.out.println("\nTest 2: Sequential WRITE operations in same group");
