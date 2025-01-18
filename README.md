@@ -2,10 +2,11 @@ Task Executor Service.
 
 This repository contains an implementation of a task executor service adhering to the following specifications.
 
-Entry Point
 The entry point for the service is Main.java. Details of the TaskExecutor interface, along with its dependencies, are defined within the codebase.
 
 Key Features and Behaviors
+
+
 	1.	Concurrent Task Submission:
 	•	Tasks can be submitted concurrently.
 	•	Submission is non-blocking for the submitter.
